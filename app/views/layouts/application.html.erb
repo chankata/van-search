@@ -22,7 +22,15 @@
 <nav>
   
   <div class="nav-wrapper">
-    <a href="#" class="brand-logo left">VAN検索</a>
+    <a href="#" class="brand-logo left">得意先検索</a>
+    <%= form_tag('/skkims/search', method: :get) do %>
+      <div class="input-field">
+        <input id="search" name="keyword" placeholder="得意先名で検索" type="search" require>
+          <!--<label class="label-icon" for="search"><i class="material-icons">search</i></label>-->
+          <!--<i class="material-icons">close</i>-->
+        </input>
+      </div>
+    <% end %>
   </div>
   
 </nav>
