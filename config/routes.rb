@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :skkims, only: :show do
+  resources :skkims, only: :show  do
     collection do
       get 'search'
     end

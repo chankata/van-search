@@ -22,7 +22,9 @@
 <nav>
   
   <div class="nav-wrapper">
-    <a href="#" class="brand-logo left">得意先検索</a>
+    <div class="brand-logo left">
+      <%= link_to "得意先検索", root_path %>
+    </div>
     <%= form_tag('/skkims/search', method: :get) do %>
       <div class="input-field">
         <input id="search" name="keyword" placeholder="得意先名で検索" type="search" require>
